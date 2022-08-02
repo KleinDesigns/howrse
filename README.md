@@ -6,4 +6,4 @@ Das Skript lässt sich offline ausführen. Vue wird zum Start vorrausgesetzt.
 ## Fehler oder Verbesserungsvorschläge?
 Kannst du mir gerne mitteilen, ich werde dir antworten.
 
-© Klein Designs
+© 2022 Klein Designs
