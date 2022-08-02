@@ -1,9 +1,10 @@
 <script setup>
 import {ref} from 'vue'
 
+// All colors with index
 const horseColors = { "Apfelschimmel": 33, "Apfelschimmel mit Tobiano-Scheckung": 56, "Braun": 4, "Brauner": 26, "Brauner Leopard": 86, "Brauner mit Overo-Scheckung": 77, "Brauner mit Tobiano-Scheckung": 54, "Brauner mit Tovero-Scheckung": 82, "Braunfalben": 59, "Braunschecke": 48, "Cremello": 31, "Cremello mit Tobiano-Scheckung": 70, "Dunkelbrauner": 30, "Dunkelbrauner mit Overo-Scheckung\t": 78, "Dunkelbrauner mit Tobiano-Scheckung": 55, "Dunkelbrauner mit Tovero-Scheckung\t": 83, "Dunkelfuchs": 27, "Dunkelfuchs mit Overo-Scheckung\t": 76, "Dunkelfuchs mit Tobiano-Scheckung": 53, "Dunkelfuchs mit Tovero-Scheckung": 81, "Dunkelfuchs mit heller Mähne": 28, "Dunkelfuchsschecke": 74, "Falb-Schecke\t": 49, "Falbe": 7, "Falbe mit Overo-Scheckung\t": 69, "Falbe mit Tobiano-Scheckung": 65, "Forellenschimmel": 35, "Fuchs": 2, "Fuchs mit Tobiano-Scheckung": 52, "Fuchs mit Tovero-Scheckung\t": 80, "Fuchs mit heller Mähne": 29, "Fuchsschecke": 47, "Gelbfalben": 63, "Graufalben": 60, "Hellfalben": 61, "Hellgrau": 32, "Leicht gefleckter Brauner": 88, "Leicht gefleckter Rotfuchs": 87, "Mausgrau": 34, "Mausgrauer mit Tobiano-Scheckung": 71, "Overo-Fuchsschecke": 67, "Palomino": 16, "Palomino mit Overo-Scheckung\t": 79, "Palomino mit Tobiano-Scheckung": 58, "Palomino mit Tovero-Scheckung": 85, "Palomino-Schecke": 51, "Rappe": 3, "Rappe mit Overo-Scheckung": 66, "Rappe mit Tobiano-Scheckung": 57, "Rappe mit Tovero-Scheckung\t": 84, "Rappschecke": 50, "Roan": 12, "Rotbrauner": 5, "Rotbrauner mit Overo-Scheckung\t": 68, "Rotbrauner mit Tobiano-Scheckung": 64, "Rotfalben": 62, "Rotschecke": 75, "Schabracken-Falbe\t": 38, "Schabrackenbrauner": 37, "Schabrackendunkelfuchs": 72, "Schabrackenfuchs": 36, "Schabrackenpalomino": 40, "Schabrackenrappe": 39, "Schabrackenrotbrauner": 73, "Schimmel": 1, "Strawberry Roan": 10, "Wenige schwarze Flecken\t": 41, "braune Schneeflocke\t": 45, "fuchsfarbene Schneeflocke": 44, "fuchsfarbener Leopard": 42, "schwarze Schneeflocke\t": 46, "schwarzer Leopard": 43   };
  
-// Farben Alphabetisch speichern
+// Order horseColors
 const colors = Object.keys(horseColors).sort().reduce(
   (obj, key) => { 
     obj[key] = horseColors[key]; 
@@ -12,6 +13,7 @@ const colors = Object.keys(horseColors).sort().reduce(
   {}
 );
 
+// All breeds with index and available colors
 const breeds = { 
   "Achal-Tekkiner": {
     "index" : 81,
